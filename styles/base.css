@@ -45,6 +45,10 @@ main{
 }
 ul li{
     list-style-type: decimal-leading-zero;
+    text-align: left;
+}
+ul li a{
+    text-decoration: none;
 }
 footer{
     display: grid;
