@@ -1,0 +1,31 @@
+@media screen and (min-width: 800px){
+    main{
+        display: grid;
+        grid-template: 1fr 1fr/ 1fr 1fr;
+    }
+    #hicks{
+        grid-row: 1/2;
+    }
+    #visual_hierarchy{
+        grid-row: 1/2;
+    }
+    #white_space{
+        grid-row: 2/3;
+    }
+}
+@media screen and (min-width: 1200px){
+    main{
+        display: grid;
+        grid-template: 1fr/1fr 1fr 1fr;
+    }
+    #hicks{
+        grid-column: 1/2;
+    }
+    #visual_hierarchy{
+        grid-column: 2/3;
+    }
+    #white_space{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}

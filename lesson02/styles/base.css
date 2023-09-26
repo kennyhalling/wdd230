@@ -1,0 +1,42 @@
+body{
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    background-color: azure;
+}
+header{
+    margin: 10px auto;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    border-radius: 10px;
+    grid-row: 1/2;
+    padding: 2rem;
+    background-color: rgb(1, 121, 121);
+    color: white;
+}
+main{
+    font-family: 'Roboto', sans-serif;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+section{
+    max-width: 300px;
+    margin: 2em auto;
+    border: 5px solid rgb(8, 60, 139);
+    border-radius: 10px;
+    padding: 2em;
+    background-color: rgb(214, 222, 233);
+}
+section p a{
+    text-decoration: none;
+}
+#hicks{
+    grid-row: 1/2;
+}
+#visual_hierarchy{
+    grid-row: 2/3;
+}
+#white_space{
+    grid-row: 3/4;
+}
