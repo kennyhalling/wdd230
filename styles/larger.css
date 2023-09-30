@@ -1,8 +1,13 @@
-@media screen and (min-width: 750px) {
-    nav{
-        display: flex;
+@media screen and (min-width: 600px) {
+    #menu{
+        display: none;
     }
-    nav a{
+    .navigation{
+        display: flex;
+        flex-direction: row;
+    }
+    .navigation li {
+        display: block;
         flex: 1 1 100%;
     }
     main {

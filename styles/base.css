@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Quicksand&display=swap');
+
 
 body{
     margin: 0 auto;
@@ -16,13 +16,43 @@ nav{
     margin: auto;
     width: 75%;
 }
-nav a{
+.navigation{
+    display: flex;
+	flex-direction: column;
+    margin: auto;
+}
+.navigation li{
+    list-style-type: none;
+    display: none;
+}
+.navigation li a{
     padding: 5px;
     display: block;
     text-decoration: none;
     text-align: center;
     font-size: large;
     color:midnightblue;
+}
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+}
+#menu::before {
+	content: "☰";
+}
+#menu.open::before {
+	content: "✖️";
 }
 #self{
     display: block;
@@ -49,6 +79,12 @@ ul li{
 }
 ul li a{
     text-decoration: none;
+}
+#map{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    padding: 10px;
 }
 footer{
     display: grid;
