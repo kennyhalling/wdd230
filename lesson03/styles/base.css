@@ -1,0 +1,75 @@
+body{
+    margin: 2%;
+    font-family: 'Inter', sans-serif;
+    background-color: #CCE6F4;
+}
+header{
+    text-align: center;
+    border: 2px solid black;
+    font-family: 'Playfair Display', serif;
+    background-color: #C13355;
+    color: white;
+}
+main{
+    display: grid;
+    grid-template: 1fr 1fr 2fr/ 1fr 1fr;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+main section{
+    padding: 10px;
+    border: 2px dotted #1C6487;
+    background-color: white;
+}
+#typography{
+    grid-column: 1/3;
+}
+#colors{
+    display: flex;
+}
+.box{
+    margin: 5px;
+    height: 5em;
+    width: 7em;
+    border: 2px solid black;
+    text-align: center;
+}
+#main-color-1{
+    background-color: #CCE6F4;
+}
+#main-color-2{
+    background-color: #C13355;
+    color: white;
+}
+#accent-color-1{
+    background-color: #1C6487;
+    color: white;
+}
+#accent-color-2{
+    background-color: #FB9489;
+}
+#example{
+    padding: 5px;
+    border: 2px solid black;
+}
+#example h3{
+    font-family: 'Playfair Display', serif;
+}
+#example h4{
+    font-family: 'Poppins', sans-serif;
+}
+#example p{
+    font-family: 'Inter', sans-serif;
+}
+#wireframe{
+    display: grid;
+    grid-template-rows: 75px 1fr;
+}
+#wireframe h2{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+#wireframe img{
+    margin: 10px;
+}
