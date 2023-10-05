@@ -1,7 +1,4 @@
-
-
 body{
-    margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
     background-color: azure;
 }
@@ -11,6 +8,10 @@ header{
     width: 75%;
     background-color:rgb(24, 182, 182);
     grid-template: 150px/ 1fr 1.5fr;
+}
+header img{
+    height: 85%;
+    width: auto;
 }
 nav{
     margin: auto;
