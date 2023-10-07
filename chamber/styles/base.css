@@ -1,0 +1,89 @@
+body{
+    background-color: #f3cbc7;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    margin: 0 auto;
+    background-color: #1a5b7c;
+    display: grid;
+    grid-template: 150px/ 2fr 3fr;
+    color: #ffffff;
+    width: 85%;
+}
+header h1{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+header img{
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+nav{
+    margin: auto;
+    width: 75%;
+}
+.navigation{
+    display: flex;
+	flex-direction: column;
+    margin: auto;
+}
+.navigation li{
+    list-style-type: none;
+    display: none;
+}
+.navigation li a{
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color:#1C6487;
+}
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: sticky;
+}
+#menu::before {
+	content: "☰";
+}
+#menu.open::before{
+    content: "❌";
+}
+#join_now{
+    background-color: #38030f;
+    color:#ffffff;
+}
+main{
+    margin: auto;
+    width: 75%;
+}
+.card{
+    border: 2px solid #38030f;
+    background-color: #e2f1fa;
+    margin: 5px;
+}
+footer{
+    margin: 0 auto;
+    background-color: #1a5b7c;
+    color: #ffffff;
+    width: 85%;
+    text-align: center;
+}
