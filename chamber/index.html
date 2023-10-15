@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wells Branch Chamber of Commerce</title>
     <meta name="description"
-        content="The Wells Branch Chamber of Commerce website. Used to announce current and upcoming events, guide new businesses to join, and to promote member businesses.">
+        content="The Wells Branch Chamber of Commerce website. Used to announce current and upcoming events, guide new businesses to join, and to promote member businesses. This is a fake site made for a school project.">
     <meta name="author" content="Kenneth S. Halling">
     <meta property="og:title" content="Wells Branch Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -27,6 +27,12 @@
 </head>
 
 <body>
+    <div id="mode">
+        <label title="switch" id="switch">
+            <input title="check" id="check" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
     <header>
         <img src="images/logo.jpg" alt="WB logo">
         <h1>Wells Branch Chamber of Commerce</h1>
@@ -40,27 +46,27 @@
             <li><a href='#'>Join</a></li>
         </ul>
     </nav>
-    <main>
-        <div id="hero">
-            <h2>A Hero Banner will go here</h2>
-        </div>
+    <div id="hero_box">
+        <img id="hero_image" src="images/hero-image.jpg" alt="Wells Branch Building">
         <div id="action_call">
             <button id="join_now" title="join_button">Join Now</button>
         </div>
+    </div>
+    <main>
         <section class="card" id="current_events">
-            <h3>Current Events</h3>
+            <h2>Current Events</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ut mollitia nulla laborum voluptatum
                 rem? Natus voluptas ea dignissimos amet sapiente nobis. Ex odit velit deserunt eius recusandae voluptas
                 fugit?</p>
         </section>
         <section class="card" id="weather">
-            <h3>Weather</h3>
+            <h2>Weather</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eveniet commodi atque esse. Accusamus
                 soluta doloribus sed molestias at quis velit cum fuga tempora nulla, esse sequi maxime nemo architecto?
             </p>
         </section>
         <section class="card" id="spotlights">
-            <h3>Spotlights</h3>
+            <h2>Spotlights</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quisquam iste eligendi libero possimus
                 perferendis tempore amet nostrum hic, distinctio iusto mollitia optio eius facilis placeat? Maxime quis
                 obcaecati voluptas!</p>
@@ -68,7 +74,6 @@
     </main>
     <footer>
         <p id="author">Kenneth S. Halling</p>
-        <p id="disclaimer">This is a school project for WDD 230, not a real site.</p>
         <p id="last_modified"></p>
     </footer>
     <script src="scripts/base.js" defer></script>

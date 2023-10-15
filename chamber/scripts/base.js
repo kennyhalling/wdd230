@@ -7,3 +7,10 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+const modeSwitch = document.querySelector('#check');
+const main = document.querySelector("body");
+
+modeSwitch.addEventListener("click", () => {
+	main.classList.toggle('dark');
+});
