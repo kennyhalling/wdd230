@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/favicon.jpg">
+    <link rel="icon" href="images/favicon.webp">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display:wght@500&family=Poppins&display=swap"
         rel="stylesheet">
@@ -34,7 +34,7 @@
         </label>
     </div>
     <header>
-        <img src="images/logo.jpg" alt="WB logo">
+        <img src="images/favicon.webp" alt="WB logo">
         <h1>Wells Branch Chamber of Commerce</h1>
     </header>
     <nav>
@@ -47,7 +47,11 @@
         </ul>
     </nav>
     <div id="hero_box">
-        <img id="hero_image" src="images/hero-image.jpg" alt="Wells Branch Building">
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/temp-small.webp">
+            <source media="(max-width: 1000px)" srcset="images/temp-medium.webp">
+            <img id="hero_image" src="images/temp-large.webp" alt="Wells Branch Building" height="750" width="1500">
+        </picture>
         <div id="action_call">
             <button id="join_now" title="join_button">Join Now</button>
         </div>
@@ -61,9 +65,9 @@
         </section>
         <section class="card" id="weather">
             <h2>Weather</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eveniet commodi atque esse. Accusamus
-                soluta doloribus sed molestias at quis velit cum fuga tempora nulla, esse sequi maxime nemo architecto?
-            </p>
+            <p id="temperature"></p>
+            <p id="wind-speed"></p>
+            <p id="wind-chill"></p>
         </section>
         <section class="card" id="spotlights">
             <h2>Spotlights</h2>
@@ -77,5 +81,6 @@
         <p id="last_modified"></p>
     </footer>
     <script src="scripts/base.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 
 </html>

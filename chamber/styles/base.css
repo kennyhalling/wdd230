@@ -74,6 +74,7 @@ header h1{
 header img{
     margin: 0 auto;
     border-radius: 50px;
+    width: 110px;
     display: flex;
     align-self: center;
     justify-content: center;
@@ -117,12 +118,14 @@ nav{
 	display: block;
 }
 #menu {
+    margin: 2px 20%;
+    width: 60%;
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
- 	position: sticky;
+	background-color: #5e0419;
+	color: #ffffff;
+    box-shadow: 5px 5px 10px black;
 }
 #menu::before {
 	content: "☰";
@@ -137,10 +140,17 @@ nav{
     width: 85%;
     box-shadow: 5px 5px 10px black;
 }
+#hero_box picture{
+    grid-row: 1/3;
+    grid-column: 1/3;
+    width: 100%;
+    justify-content: center;
+}
 #hero_image{
     grid-row: 1/3;
     grid-column: 1/3;
     width: 100%;
+    height: 100%;
     justify-content: center;
 }
 #action_call{
@@ -152,10 +162,9 @@ nav{
     background-color: #5e0419;
     color:#ffffff;
     box-shadow: 5px 5px 10px black;
-    width: 30%;
-    font-size: 125%;
+    font-weight: 1000;
     text-align: center;
-    padding: .5em;
+    padding: 1em;
     border-radius: 10%;
     position: absolute;
     top: 20%;
@@ -184,6 +193,9 @@ main{
     margin: 5px;
     padding: 3px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+#temperature{
+    font-size: x-large;
 }
 footer{
     margin: 0 auto;
