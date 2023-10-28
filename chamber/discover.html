@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wells Branch Chamber of Commerce</title>
+    <meta name="description"
+        content="The Wells Branch Chamber of Commerce website. Used to announce current and upcoming events, guide new businesses to join, and to promote member businesses. This is a fake site made for a school project.">
+    <meta name="author" content="Kenneth S. Halling">
+    <meta property="og:title" content="Wells Branch Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://wellsbranchmud.com/images/pictures/homestead/homestead-1545.jpg">
+    <meta property="og:url" content="https://kennyhalling.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.webp">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display:wght@500&family=Poppins&display=swap"
+        rel="stylesheet">
+    <!-- CSS FONT RULES: 
+        font-family: 'Playfair Display', serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Inter', sans-serif;-->
+</head>
+
+<body>
+    <div id="mode">
+        <label title="switch" id="switch">
+            <input title="check" id="check" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <header>
+        <img src="images/favicon.webp" alt="WB logo">
+        <h1>Wells Branch Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu" title="ham_button"></button>
+        <ul class="navigation">
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>Discover</a></li>
+            <li><a href='#'>Directory</a></li>
+            <li><a href='#'>Join</a></li>
+        </ul>
+    </nav>
+    <main id="main-discovery">
+        <div id="cards">
+            <section class="card">
+                <h2>Website Visits</h2>
+                <p id="visit-tracker"></p>
+            </section>
+            <section class="card">
+                <h2>Demographics</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo voluptatem voluptas
+                    velit excepturi nisi blanditiis quia dolorum illo! Ad ab dolorum asperiores quo accusamus, totam
+                    tempora rem cumque doloribus?</p>
+            </section>
+            <section class="card">
+                <h2>Calendar</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi facere expedita et sequi iste nemo
+                    velit harum, facilis dolorem. Explicabo, aut. Iure optio unde, corrupti porro eos reiciendis omnis
+                    fugiat.</p>
+            </section>
+            <section class="card">
+                <h2>Upcoming Events</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe delectus enim aliquid quos officia!
+                    Eaque consequatur saepe voluptatem exercitationem eligendi unde laboriosam deserunt eos explicabo
+                    reiciendis pariatur, adipisci quod. Dignissimos.</p>
+            </section>
+            <section class="card">
+                <h2>Attractions</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint cupiditate quos magni, impedit
+                    blanditiis aliquid cumque cum, commodi dicta est iste vitae rerum, voluptate officia ullam nihil
+                    nemo voluptates quisquam.</p>
+            </section>
+        </div>
+        <div id="pic-column">
+            <div class="image-box">
+                <div class="text-box">
+                    <p>Katherine Fleisher Playground</p>
+                </div>
+                <img src="images/katherine-fleisher-playground.webp" alt="playgorund" width="640" height="480">
+            </div>
+            <div class="image-box">
+                <div class="text-box">
+                    <p>Wells Branch Library</p>
+                </div>
+                <img src="images/library.webp" alt="library" loading="lazy" width="640" height="480">
+            </div>
+            <div class="image-box">
+                <div class="text-box">
+                    <p>Mills Pond</p>
+                </div>
+                <img src="images/mills-pond.webp" alt="mills-pond" loading="lazy" width="640" height="480">
+            </div>
+            <div class="image-box">
+                <div class="text-box">
+                    <p>MUD Community Center</p>
+                </div>
+                <img src="images/MUD-community-center.webp" alt="community-center" loading="lazy" width="640"
+                    height="480">
+            </div>
+            <div class="image-box">
+                <div class="text-box">
+                    <p>MUD Rec Center</p>
+                </div>
+                <img src="images/rec-center.webp" alt="rec center" loading="lazy" width="640" height="480">
+            </div>
+            <div class="image-box">
+                <div class="text-box">
+                    <p>Wells Branch Homestead</p>
+                </div>
+                <img src="images/wells-branch-homestead.webp" alt="homestead" loading="lazy" width="640" height="480">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="author">Kenneth S. Halling</p>
+        <p id="last_modified"></p>
+    </footer>
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
+</body>
+
+</html>

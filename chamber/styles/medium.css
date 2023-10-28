@@ -1,0 +1,28 @@
+@media screen and (min-width: 900px){
+    #main-discovery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #cards{
+        grid-column: 1/2;
+        margin: 0 10%;
+    }
+    #pic-column{
+        grid-column: 2/3;
+    }
+    #main-discovery #cards .card h2{
+        font-size: 2vw;
+    }
+    #main-discovery #cards .card p{
+        font-size: 1.5vw;
+    }
+    .text-box p{
+        font-size: 1.5vw;
+    }
+    #pic-column .image-box:hover{
+        box-shadow: 20px 20px 100px #38030f;
+    }
+    .dark #pic-column .image-box:hover{
+        box-shadow: 20px 20px 100px white;
+    }
+}

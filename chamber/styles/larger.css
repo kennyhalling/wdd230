@@ -10,7 +10,7 @@
         display: block;
         flex: 1 1 100%;
     }
-    main{
+    #main-home{
         display: grid;
         grid-template: 200px 50px 1fr 1fr/1fr 1fr;
     }
