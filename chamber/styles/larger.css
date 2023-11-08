@@ -21,4 +21,14 @@
         grid-row: 3/5;
         grid-column: 1/2;
     }
+    #form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #form form{
+        grid-column: 1/2;
+    }
+    #memberships{
+        grid-column: 2/3;
+    }
 }

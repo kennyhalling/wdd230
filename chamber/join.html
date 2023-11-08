@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wells Branch Chamber of Commerce | Join</title>
+    <meta name="description"
+        content="The Wells Branch Chamber of Commerce website. A form to fill out to join the chamber.">
+    <meta name="author" content="Kenneth S. Halling">
+    <meta property="og:title" content="Wells Branch Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://wellsbranchmud.com/images/pictures/homestead/homestead-1545.jpg">
+    <meta property="og:url" content="https://kennyhalling.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.webp">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display:wght@500&family=Poppins&display=swap"
+        rel="stylesheet">
+    <!-- CSS FONT RULES: 
+        font-family: 'Playfair Display', serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Inter', sans-serif;-->
+</head>
+
+<body>
+    <div id="mode">
+        <label title="switch" id="switch">
+            <input title="check" id="check" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <header>
+        <img src="images/favicon.webp" alt="WB logo">
+        <h1>Wells Branch Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu" title="ham_button"></button>
+        <ul class="navigation">
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='discover.html'>Discover</a></li>
+            <li><a href='#'>Directory</a></li>
+            <li><a href='join.html'>Join</a></li>
+        </ul>
+    </nav>
+    <main id="form">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name*<input type="text" id="fname" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label class="top">Position<input type="text" id="position" name="position"
+                        pattern="[a-zA-Z\s\-]{7,}"></label>
+                <label class="top">Email*<input type="email" id="email" name="email" placeholder="example@email.com"
+                        required></label>
+                <label class="top">Phone*<input type="telephone" id="phone" name="phone" required></label>
+                <label class="top">Business*<input type="text" id="business" name="business" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Options</legend>
+                <label class="memchoice"><input type="radio" name="membership" value="non-profit">Non-Profit</label>
+                <label class="memchoice"><input type="radio" name="membership" value="bronze">Bronze</label>
+                <label class="memchoice"><input type="radio" name="membership" value="silver">Silver</label>
+                <label class="memchoice"><input type="radio" name="membership" value="gold">Gold</label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Description</legend>
+                <textarea id="bus-describe" name="business-description"
+                    placeholder="Describe your business..."></textarea>
+            </fieldset>
+            <label><input type="hidden" id="timestamp" name="timestamp"></label>
+            <button type="submit" value="Join the Chamber" class="submitBtn">Join the Chamber</button>
+        </form>
+        <div id="memberships">
+            <section class="card" id="np-level">
+                <h2>Non-Profit Membership</h2>
+                <p id="requirement">YOUR BUSINESS MUST BE A NON-PROFIT TO QUALIFY FOR THESE BENEFITS</p>
+                <ul class="benefits">
+                    <li class="cost">$0 Per Year</li>
+                    <li>Limited Access to Regular Events</li>
+                    <li>Home Page Spotlight once every 6 months</li>
+                </ul>
+            </section>
+            <section class="card" id="bronze-level">
+                <h2>Bronze Membership</h2>
+                <ul class="benefits">
+                    <li class="cost">$1,000 Per Year</li>
+                    <li>Access to Regular Events</li>
+                    <li>Home Page Spotlight Once Every 6 Months</li>
+                </ul>
+            </section>
+            <section class="card" id="silver-level">
+                <h2>Silver Membership</h2>
+                <ul class="benefits">
+                    <li class="cost">$5,000 Per Year</li>
+                    <li>Access to Regular and Special Events</li>
+                    <li>Home Page Spotlight Once Every 3 Months</li>
+                    <li>Yearly Training Opportunities</li>
+                </ul>
+            </section>
+            <section class="card" id="gold-level">
+                <h2>Gold Membership</h2>
+                <ul class="benefits">
+                    <li class="cost">$10,000 Per Year</li>
+                    <li>Access to Regular and Special Events</li>
+                    <li>Home Page Spotlight Once Every Month</li>
+                    <li>Yearly Training Opportunities</li>
+                    <li>Event Discounts</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p id="author">Kenneth S. Halling</p>
+        <p id="last_modified"></p>
+    </footer>
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+</body>
+
+</html>
