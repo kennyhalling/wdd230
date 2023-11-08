@@ -1,12 +1,17 @@
+:root{
+    --head-foot-color: rgb(24, 182, 182);
+    --form-accent1: #540574;
+    --quicksand-font: 'Quicksand', sans-serif;
+}
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--quicksand-font);
     background-color: #fff;
 }
 header{
     display: grid;
     margin: auto;
     width: 75%;
-    background-color:rgb(24, 182, 182);
+    background-color: var(--head-foot-color);
     grid-template: 150px/ 1fr 1.5fr;
 }
 header picture{
@@ -104,7 +109,7 @@ main{
     margin: 0;
     padding: .25rem;
     font-weight: 1000;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--quicksand-font);
 }
 ul li{
     list-style-type: decimal-leading-zero;
@@ -155,7 +160,7 @@ form legend{
 form label.top, form div{
     display: block;
     padding-top: 1rem;
-    color: #540574;
+    color: var(--form-accent1);
     font-size: .8rem;
 }
 form label.top input, form label.top select{
@@ -194,7 +199,7 @@ form label.top input:required:valid{
 form label{
     display: block;
     padding: .8rem;
-    color: #540574;
+    color: var(--form-accent1);
     font-size: 1.2rem;
 }
 #rating {
@@ -204,7 +209,7 @@ form label{
 #rangevalue {
 	font-size: 2rem;
     padding: 2%;
-	color: #540574;
+	color: var(--form-accent1);
 }
 #rangevalues {
 	display: flex;
@@ -216,5 +221,5 @@ form label{
 }
 #record-main{
     height: 20rem;
-    color: #540574;
+    color: var(--form-accent1);
 }
