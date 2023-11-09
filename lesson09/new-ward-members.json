@@ -1,0 +1,28 @@
+{
+    "familyName" : "Smith",
+    "moveInDate" : "November 3rd, 2023",
+    "numberOfPeople" : "4",
+    "visitedByBishopic" : "no",
+    "members" : [
+        {
+            "name" : "Susy",
+            "gender" : "Female",
+            "Birthdate" : "October 31st, 2000"
+        },
+        {
+            "name" : "Christopher",
+            "gender" : "Male",
+            "Birthdate" : "May 7th, 2001"
+        },
+        {
+            "name" : "Penny",
+            "gender" : "Female",
+            "Birthdate" : "September 18th, 2020"
+        },
+        {
+            "name" : "Hannah",
+            "gender" : "Female",
+            "Birthdate" : "April 30th, 2022"
+        }
+    ]
+}
