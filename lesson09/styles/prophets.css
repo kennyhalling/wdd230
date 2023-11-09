@@ -1,0 +1,16 @@
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+#cards section{
+    text-align: center;
+    background-color: rgb(229, 151, 231);
+    margin: .5em;
+}
+#cards section h2{
+    color: rgb(32, 32, 136);
+}
+#cards section img{
+    width: auto;
+    max-width: 300px;
+}
