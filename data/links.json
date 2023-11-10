@@ -1,0 +1,126 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url":"lesson01/holygrail.html",
+                    "title": "Holy Grail Assignment"
+                },
+                {
+                    "url":"lesson01/media-query.html",
+                    "title": "Media Query Assignment"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url":"lesson02/design.html",
+                    "title": "Design Assignment"
+                },
+                {
+                    "url":"lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url":"lesson03/images/week03_activity1.png",
+                    "title": "Combinator Activity"
+                },
+                {
+                    "url":"https://codepen.io/kennyhalling/pen/RwEyVLG",
+                    "title": "Pseudo Elements"
+                },
+                {
+                    "url":"https://codepen.io/kennyhalling/pen/gOZzWvW",
+                    "title": "Hamburger Menu"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url":"https://codepen.io/kennyhalling/pen/poqQyjo",
+                    "title": "Pseudo Classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url":"lesson05/bom.html",
+                    "title": "BOM Application"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url":"lesson06/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url":"lesson06/responsive-images.html",
+                    "title": "Temple Image Assignment"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazyload Activity"
+                },
+                {
+                    "url":"lesson07/bom.html",
+                    "title": "BOM 2 Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url":"lesson08/tablebuild.html",
+                    "title": "Table Build Activity"
+                },
+                {
+                    "url":"lesson08/index.html",
+                    "title": "Form Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url":"lesson09/new-ward-members.json",
+                    "title": "JSON Assignment"
+                },
+                {
+                    "url":"lesson09/prophets.html",
+                    "title": "Fetch Assignment"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url":"#",
+                    "title": "~"
+                }
+            ]
+        }
+    ]
+}
