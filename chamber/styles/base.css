@@ -188,6 +188,9 @@ main{
     border: 2px solid black;
     color: white;
 }
+.dark .card a{
+    color: rgb(208, 237, 247);
+}
 .card{
     border: 2px solid #38030f;
     background-color: #e2f1fa;
@@ -347,4 +350,72 @@ form textarea{
 }
 .dark #thanks h2{
     color: white;
+}
+
+/*--------------------Directory Page---------------------*/
+#display{
+    margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+#display button {
+	padding: 1rem;
+    margin:  0 .5em;
+	font-weight: 700;
+    color: white;
+    background-color: #5e0419;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10%;
+}
+#display button:hover{
+    background-color: #f7e4e3;
+    color: #1a5b7c;
+}
+#dir-main .card img{
+    margin: 0 5%;
+    width: 90%;
+    height: 100%;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none;
+}
+.list section:nth-child(even) {
+	background-color: rgb(243, 189, 197);
+}
+.dark .list section:nth-child(even) {
+	background-color: #5e0419;
 }

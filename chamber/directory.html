@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wells Branch Chamber of Commerce</title>
-    <meta name="description"
-        content="The Wells Branch Chamber of Commerce website. Used to announce current and upcoming events, guide new businesses to join, and to promote member businesses. This is a fake site made for a school project.">
+    <title>Wells Branch Chamber of Commerce | Directory</title>
+    <meta name="description" content="The Wells Branch Chamber of Commerce website's directory page.">
     <meta name="author" content="Kenneth S. Halling">
     <meta property="og:title" content="Wells Branch Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -34,7 +33,7 @@
         </label>
     </div>
     <header>
-        <img src="images/favicon.webp" alt="WB logo">
+        <img src="images/favicon.webp" alt="WB logo" width="110" height="110">
         <h1>Wells Branch Chamber of Commerce</h1>
     </header>
     <nav>
@@ -46,15 +45,19 @@
             <li><a href='join.html'>Join</a></li>
         </ul>
     </nav>
-    <main id="thanks">
-        <h2>Thank You! We Will Contact You Shortly!</h2>
+    <div id="display">
+        <button id="grid"> Grid </button>
+        <button id="list"> List </button>
+    </div>
+    <main id="dir-main">
+        <div id="spotlights" class="grid"></div>
     </main>
     <footer>
         <p id="author">Kenneth S. Halling</p>
         <p id="last_modified"></p>
     </footer>
     <script src="scripts/base.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/links.js" defer></script>
 </body>
 
 </html>
