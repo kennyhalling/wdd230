@@ -21,6 +21,7 @@ header picture{
 #self{
     height: 85%;
     width: auto;
+    border-radius: 5%;
 }
 nav{
     margin-left: 12.5%;
@@ -58,7 +59,7 @@ nav{
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
-	background-color: #7706a3;
+	background-color: #37054b;
 	color: #ffffff;
     box-shadow: 5px 5px 10px black;
 }
@@ -111,12 +112,20 @@ main{
     font-weight: 1000;
     font-family: var(--quicksand-font);
 }
+.card{
+    border: 2px solid black;
+    margin: 0 2%;
+    padding: 5%;
+}
 ul li{
     list-style-type: decimal-leading-zero;
     text-align: left;
 }
 ul li a{
     text-decoration: none;
+}
+figcaption{
+    text-transform: capitalize;
 }
 #map{
     margin-left: 15%;
