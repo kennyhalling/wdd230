@@ -180,6 +180,33 @@ main{
     margin: auto;
     width: 75%;
 }
+#banner{
+    display: none;
+    background-color: #18455c;
+    color: white;
+}
+.dark #banner{
+    background-color: #f7e4e3;
+    color:#18455c;
+}
+#close {
+    margin: 2px 0;
+    width: 10%;
+	font-size: 1.5rem;
+	border: 0px;
+	padding: 3px 7px 6px;
+	background-color: #18455c;
+	color: #ffffff;
+}
+#close::before {
+	content: "❌";
+}
+.dark #close{
+    background-color: #f7e4e3;
+}
+.remove{
+    display: none;
+}
 .dark{
     background-color:#252424;
 }
@@ -198,8 +225,19 @@ main{
     padding: 3px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
-#temperature{
+#weather{
+    font-family: 'Playfair Display', serif;
+}
+#weather h2{
+    font-family: 'Poppins', sans-serif;
+}
+#current-temp{
     font-size: x-large;
+}
+#weather figure{
+    text-align: left;
+    margin: 0;
+    text-transform: capitalize;
 }
 footer{
     margin: 0 auto;
