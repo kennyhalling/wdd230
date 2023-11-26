@@ -13,8 +13,8 @@
     <meta property="og:image" content="https://wellsbranchmud.com/images/pictures/homestead/homestead-1545.jpg">
     <meta property="og:url" content="https://kennyhalling.github.io/wdd230/chamber/index.html">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.webp">
     <link
@@ -34,7 +34,7 @@
         </label>
     </div>
     <header>
-        <img src="images/favicon.webp" alt="WB logo">
+        <img class="logo" src="images/favicon.webp" alt="WB logo">
         <h1>Wells Branch Chamber of Commerce</h1>
     </header>
     <nav>
@@ -53,16 +53,22 @@
             <img id="hero_image" src="images/hero-large.webp" alt="Wells Branch Building" height="750" width="1500">
         </picture>
         <div id="action_call">
-            <button id="join_now" title="join_button">Join Now</button>
+            <a id="join_now" href="join.html">Join Now</a>
         </div>
     </div>
     <main id="main-home">
         <div id="banner" class="card"></div>
         <section class="card" id="current_events">
-            <h2>Current Events</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ut mollitia nulla laborum voluptatum
-                rem? Natus voluptas ea dignissimos amet sapiente nobis. Ex odit velit deserunt eius recusandae voluptas
-                fugit?</p>
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Dec 1st ~ End of Fall Parade</li>
+                <li>Dec 2nd ~ Christmas Tree Lighting</li>
+                <li>Dec 1st-2nd ~ Nativity Display</li>
+                <li>Dec 9th ~ Wells Branch MUD Chili Cookoff</li>
+                <li>Dec 15th-16th ~ Brown Santa Event</li>
+                <li>Dec 24th ~ Christmas Eve</li>
+                <li>Dec 25th ~ Christmas Day!🎄</li>
+            </ul>
         </section>
         <section class="card" id="weather">
             <h2>Weather</h2>
@@ -71,22 +77,44 @@
                 <img id="weather-icon" src="#" alt="">
                 <figcaption></figcaption>
             </figure>
-            <p id="wind-speed"></p>
-            <p id="wind-chill"></p>
+            <p><span id="wind-speed"></span><span id="wind-chill"></span></p>
+            <table id="forecast">
+                <thead>
+                    <tr>
+                        <th scope="col"><span id="day1"></span></th>
+                        <th scope="col"><span id="day2"></span></th>
+                        <th scope="col"><span id="day3"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="temp1"></span></td>
+                        <td><span id="temp2"></span></td>
+                        <td><span id="temp3"></span></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section class="card" id="spotlights">
             <h2>Spotlights</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quisquam iste eligendi libero possimus
-                perferendis tempore amet nostrum hic, distinctio iusto mollitia optio eius facilis placeat? Maxime quis
-                obcaecati voluptas!</p>
         </section>
     </main>
     <footer>
-        <p id="author">Kenneth S. Halling</p>
-        <p id="last_modified"></p>
+        <img class="logo" src="images/favicon.webp" alt="WB logo">
+        <div id="contact-info">
+            <p id="address">7878 Hall Ln, Austin, Texas 89892</p>
+            <p id="phone">(487) 908-5555</p>
+            <p id="email">wellsbranch@wbchamber.com</p>
+        </div>
+        <div id="copyright">
+            <p id="name">&copy;Wells Branch Chamber of Commerce</p>
+            <p id="author">Kenneth S. Halling</p>
+            <p id="last_modified"></p>
+        </div>
     </footer>
     <script src="scripts/base.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </body>
 
 </html>
