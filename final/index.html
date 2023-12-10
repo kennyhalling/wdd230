@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots | Cozumel Motor Rentals</title>
+    <meta name="description"
+        content="The website for Scoots, a motor scooter rental company in Cozumel, Mexico. This site contains all necessary information to learn about us and to rent from us.">
+    <meta name="author" content="Kenneth S. Halling">
+    <meta property="og:title" content="'Scoots' Motor Scooter Rentals">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1620095198790-2f663d67677d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://kennyhalling.github.io/wdd230/final/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/scoots-logo.webp" alt="Scoots logo">
+        <h1>Scoots Motor Rentals</h1>
+    </header>
+    <nav>
+        <button id="menu" title="ham_button"></button>
+        <ul class="navigation">
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='rentals.html'>Rental Information</a></li>
+            <li><a href='reservations.html'>Reservations</a></li>
+            <li><a href='contact.html'>Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="hero_box">
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+            <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+            <img id="hero_image" src="images/hero-large.webp" alt="Cozumel" height="750" width="1500">
+        </picture>
+        <div id="action_call">
+            <a id="reserve_now" href="reservations.html">Reserve Now!</a>
+        </div>
+    </div>
+    <main id="main-home">
+        <div id="banner" class="card"></div>
+        <section class="card" id="rental-summary">
+            <h2>Rental Summary</h2>
+        </section>
+        <section class="card" id="weather">
+            <h2>Weather</h2>
+        </section>
+        <section class="card" id="contact-info">
+            <h2>Contact Us!</h2>
+        </section>
+    </main>
+    <footer>
+        <img class="logo" src="images/scoots-logo.webp" alt="Scoots logo">
+        <div id="copyright">
+            <p id="name">&copy;Scoots Motor Rentals</p>
+            <p id="author">Kenneth S. Halling</p>
+            <p id="last_modified"></p>
+        </div>
+    </footer>
+    <script src="scripts/base.js" defer></script>
+</body>
+
+</html>
