@@ -16,12 +16,26 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/scoots-logo.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Radley&display=swap" rel="stylesheet">
+    <!-- CSS FONT RULES: 
+        font-family: 'Radley', serif;
+        font-family: 'Lato', sans-serif;-->
 </head>
 
 <body>
     <header>
         <img class="logo" src="images/scoots-logo.webp" alt="Scoots logo">
         <h1>Scoots Motor Rentals</h1>
+        <div id="social">
+            <div class="social1"><a href="https://www.facebook.com/" target="_blank"><img
+                        src="images/facebook-icon.webp" alt="facebook" width="50"></a>
+            </div>
+            <div class="social2"><a href="https://www.instagram.com/" target="_blank"><img
+                        src="images/instagram-icon.webp" alt="facebook" width="50"></a></div>
+            <div class="social3"><a href="https://twitter.com/?lang=en" target="_blank"><img src="images/x-icon.webp"
+                        alt="facebook" width="50"></a></div>
+        </div>
     </header>
     <nav>
         <button id="menu" title="ham_button"></button>
@@ -32,12 +46,52 @@
             <li><a href='contact.html'>Contact Us</a></li>
         </ul>
     </nav>
+    <main id="contact-main">
+        <section class="card" id="contact-info2">
+            <h2>Contact Us!</h2>
+            <ul>
+                <li>📞+52 244-726-6837 (BIG SCOOTER)</li>
+                <li>🗺️Av. Motora Genial 66, 77620 Cozumel, Q.R., Mexico</li>
+            </ul>
+            <div class="box">
+                <div class="social1"><a href="https://www.facebook.com/" target="_blank"><img
+                            src="images/facebook-icon.webp" alt="facebook" width="40"></a>
+                </div>
+                <div class="social2"><a href="https://www.instagram.com/" target="_blank"><img
+                            src="images/instagram-icon.webp" alt="facebook" width="40"></a></div>
+                <div class="social3"><a href="https://twitter.com/?lang=en" target="_blank"><img
+                            src="images/x-icon.webp" alt="facebook" width="40"></a>
+                </div>
+            </div>
+        </section>
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d21141.415616075486!2d-86.97280623120572!3d20.4935313714901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!3m2!1d20.4765505!2d-86.9734337!4m5!1s0x8f4e59c46e7f3811%3A0x68b45730273fd699!2sTerminal%20Mar%C3%ADtima%20de%20Cruceros!3m2!1d20.5087595!2d-86.9564663!5e0!3m2!1sen!2sus!4v1702544044172!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form class="card" method="get" action="thankyou2.html" id="form">
+            <h2>Questions</h2>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Name*<input type="text" id="fullName" name="fullName" required></label>
+                <label class="top">Email*<input type="email" id="e-mail" name="email" placeholder="example@email.com"
+                        required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Questions</legend>
+                <textarea id="special-inst" name="special-instructions" placeholder="Ask here.."></textarea>
+            </fieldset>
+            <button type="submit" value="Reserve Now!" class="submitBtn">Send Your Questions</button>
+        </form>
+    </main>
     <footer>
         <img class="logo" src="images/scoots-logo.webp" alt="Scoots logo">
         <div id="copyright">
             <p id="name">&copy;Scoots Motor Rentals</p>
             <p id="author">Kenneth S. Halling</p>
             <p id="last_modified"></p>
+            <a href="attributions.html">Attributions</a>
         </div>
     </footer>
     <script src="scripts/base.js" defer></script>

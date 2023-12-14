@@ -1,14 +1,15 @@
 body{
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    background-color: #FDF1E4;
+    font-family: 'Lato', sans-serif;
 }
 header{
-    margin: 0 auto;
+    margin: 5px auto;
     padding: .5em;
-    background-color: #1a5b7c;
+    background-color: #034732;
     display: grid;
-    grid-template: 200px/ 1fr 3fr;
+    grid-template: 200px/ 1fr 1fr 1fr;
     color: #ffffff;
+    border-radius: 10%;
     width: 85%;
     box-shadow: 5px 5px 10px black;
 }
@@ -17,16 +18,30 @@ header h1{
     align-self: center;
     justify-content: center;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Radley', serif;
+    font-size: 300%;
 }
 .logo{
     margin: 0 auto;
     border-radius: 60px;
-    width: 110px;
+    width: 100px;
     display: flex;
     align-self: center;
     justify-content: center;
     text-align: center;
+}
+#social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#social div{
+    margin: 5px 0;
+}
+#social div img:hover{
+    background-color: #D1FFE0;
+    box-shadow: 0 0 10px 10px #D1FFE0;
 }
 nav{
     margin: auto;
@@ -42,14 +57,14 @@ nav{
 .navigation li{
     margin-top: .5em;
     margin-bottom: .2em;
-    background-color:  #5e0419;
+    background-color:  #913B48;
     list-style-type: none;
     display: none;
     box-shadow: 5px 5px 10px black;
 }
 .navigation li a:hover{
-    background-color: #f7e4e3;
-    color: #1a5b7c;
+    background-color: #f5d9dd;
+    color: black;
 }
 .navigation li a{
     padding: 5px;
@@ -67,14 +82,20 @@ nav{
 	display: block;
 }
 #menu {
-    margin: 2px 20%;
+    display: flex;
+    justify-content: center;
+    margin: 2px auto;
     width: 60%;
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
-	background-color: #5e0419;
+	background-color: #913B48;
 	color: #ffffff;
     box-shadow: 5px 5px 10px black;
+}
+#menu:hover{
+    background-color: #f5d9dd;
+    color: black;
 }
 #menu::before {
 	content: "☰";
@@ -83,104 +104,243 @@ nav{
     content: "❌";
 }
 #hero_box{
-    margin: 0 auto;
+    margin: 5px auto;
     display: grid;
-    grid-template: 1fr 1fr/1fr 1fr;
+    grid-template: 2fr .8fr /1fr;
     width: 85%;
     box-shadow: 5px 5px 10px black;
 }
 #hero_box picture{
     grid-row: 1/3;
-    grid-column: 1/3;
+    grid-column: 1/2;
     width: 100%;
-    justify-content: center;
 }
 #hero_image{
     grid-row: 1/3;
-    grid-column: 1/3;
+    grid-column: 1/2;
     width: 100%;
     height: 100%;
-    justify-content: center;
 }
 #action_call{
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 1/2;
     position: relative;
 }
+#blank{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: #FDF1E4;
+    opacity: 55%;
+}
 #reserve_now{
-    background-color: #5e0419;
+    background-color: #913B48;
     text-decoration: none;
     color:#ffffff;
     box-shadow: 5px 5px 10px black;
     font-weight: 1000;
-    text-align: center;
-    padding: 1em;
+    font-size: 150%;
     border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 20%;
-    left: 20%;
+    bottom: 20%;
+    left: 30%;
+    right: 30%;
+    margin: auto;
 }
 #reserve_now:hover{
-    background-color: #f7e4e3;
-    color: #1a5b7c;
-}
-#reserve_now button{
-    display: none;
+    background-color: #f5d9dd;
+    color: black;
 }
 main{
     padding: 2%;
     margin: auto;
-    width: 75%;
+    width: 85%;
 }
 #banner{
     display: none;
-    background-color: #18455c;
+    background-color: #913B48;
     color: white;
 }
+#banner h2{
+    text-decoration: none;
+    width: 100%;
+}
 #close {
-    margin: 2px 0;
     width: 10%;
 	font-size: 1.5rem;
 	border: 0px;
 	padding: 3px 7px 6px;
-	background-color: #18455c;
+	background-color: #913B48;
 	color: #ffffff;
+    text-align: left;
 }
 #close::before {
-	content: "❌";
+	content: "X";
+    font-size: xx-large;
+}
+#close:hover{
+    color: #034732;
 }
 .remove{
     display: none;
 }
 .card{
     text-align: center;
-    border: 2px solid #38030f;
-    background-color: #e2f1fa;
-    margin: 5px;
+    border: 2px solid black;
+    background-color: #D1FFE0;
+    margin: 10px;
     padding: 3px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 .card h2{
-    text-decoration: underline;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   font-family: 'Radley', serif;
 }
 .card li{
     text-align: left;
 }
+#rental-summary{
+    display: flex;
+    flex-direction: column;
+}
+table{
+    border: thin solid;
+    border-collapse: collapse;
+}
+tr td ul{
+    list-style: none;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+th, td{
+    border: 1px solid black;
+}
+th{
+    background-color: #913B48;
+    color: white;
+}
+td{
+    text-align: center;
+}
+tbody tr{
+    background-color: #fff9f3;
+}
+tbody tr:nth-child(even){
+    background-color: #f5d9dd;
+}
 #weather{
     display: grid;
-    grid-template: 50px .5fr 1fr/ 1fr 1fr 1fr;
+    grid-template: 50px 1fr .15fr/ 1fr 1fr 1fr;
     font-family: 'Inter', serif;
 }
 #weather h2{
     grid-column: 1/4;
-    font-family: 'Poppins', sans-serif;
+}
+#weather div p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+#temp-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    margin: 10px auto;
+}
+#weather div #current-temp{
+    color: #2b060b;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#wind-box{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    font-weight: 900;
+    font-size: large;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#wind-chill{
+ font-size: large;
+}
+#weather figure{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: capitalize;
+    font-size: large;
+}
+#weather figure img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    max-width: 150px;
+}
+#weather #forecast-box{
+    grid-row: 2/4;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#weather #forecast{
+    margin: 0 auto;
+    width: 50%;
+    border: 3px solid;
+    border-collapse: collapse;
+    max-height: 100px;
+    table-layout: fixed;
+}
+#contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact-info ul{
+    list-style: none;
+}
+#contact-info ul li{
+    padding: 3px;
+}
+#contact-info .box{
+    display: flex;
+}
+#contact-info .box img{
+    margin: 0 15px;
+}
+#contact-info .box img:hover{
+    background-color: #034732;
+    box-shadow: 0 0 10px 10px #034732;
 }
 footer{
     display: grid;
-    grid-template: 1fr .5fr/ 1fr  1fr;
+    grid-template: 1fr/ 1fr  1fr;
     margin: 0 auto;
     padding: .5em;
-    background-color: #1a5b7c;
+    background-color: #034732;
     color: #ffffff;
     width: 85%;
     text-align: center;
@@ -188,4 +348,229 @@ footer{
 }
 footer img{
     grid-row: 1/3;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+footer a:hover{
+    color: #913B48;
+}
+
+
+
+
+/*---------------------------Rentals CSS--------------------------*/
+#rental-info{
+    display:flex;
+    flex-direction: column;
+}
+#agreements{
+    font-size: large;
+}
+#reserve-now-rental{
+    background-color: #913B48;
+    text-decoration: none;
+    color:#ffffff;
+    box-shadow: 5px 5px 10px black;
+    width: 50%;
+    max-width: 500px;
+    height: 2em;
+    font-weight: 1000;
+    font-size: 150%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+#reserve-now-rental:hover{
+    background-color: #f5d9dd;
+    color: black;
+}
+
+
+
+
+/*--------------------------Reservations CSS----------------------------*/
+#res-main h2{
+    font-size: xx-large;
+}
+#res-agreements{
+    font-size: large;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+#form h2{
+    text-align: center;
+}
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 5% auto;
+    width: 75%;
+    max-width: 800px;
+    border: 1px solid #034732;
+    background-color: #edfff4;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend{
+    color: #034732;
+    background-color: #edfff4;
+    border-top: 1px solid #034732;
+    border-radius: 40%;
+    margin: 0 1rem;
+    padding: 1.5rem;
+}
+form label.top{
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+}
+form label.top input{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #001514;
+    width: 90%;
+    max-width: 20rem;
+    background-color: #ffffff;
+}
+form .middle{
+    font-size: 0.8rem;
+}
+form div.middle{
+    padding: 0 12.8px;
+}
+form div.middle label.middle{
+    padding-left: 0px;
+    width: 100%;
+}
+form .middle input, select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #001514;
+    width: 90%;
+    max-width: 20rem;
+    background-color: #ffffff;
+}
+#res-type{
+    width:100%;
+}
+#period{
+    display: none;
+}
+#res-type[value="full-day"] + #period{
+    display:block;
+}
+form .bottom{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #001514;
+    max-width: 20rem;
+}
+form .bottom input{
+    margin-right: 5px;
+}
+.number{
+    display: block;
+    padding: 2px;
+    font-size: medium;
+    margin-left: 15px;
+}
+.number input{
+    padding: .25rem;
+    border-radius: 4px;
+    border: solid 1px black;
+    background-color: #ffffff;
+}
+form label input:required, select:required{
+    border-left: red solid 6px;
+}
+form label input:required:valid, select:required:valid{
+    border-left: rgb(66, 226, 66) solid 6px;
+}
+form label{
+    display: block;
+    padding: .8rem;
+    font-size: 1.2rem;
+}
+form textarea{
+    resize: none;
+    width: 97%;
+    height: 10rem;
+    padding: 3px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: #6e328a;
+}
+.bottom .number{
+    display: none;
+}
+.bottom input[type="checkbox"]:checked + .number{
+    display: block;
+}
+.submitBtn{
+    background-color: #913B48;
+    color:#ffffff;
+    box-shadow: 5px 5px 10px black;
+    font-weight: 1000;
+    text-align: center;
+    border-radius: 10%;
+    padding: .75rem 1.5rem;
+    margin: 0px auto 20px auto;
+    width: 96%;
+    max-width: 20rem;
+}
+.submitBtn:hover{
+    background-color: #f5d9dd;
+    color: black; 
+}
+
+
+
+/*--------------------------------Contact CSS-------------------------------*/
+#contact-main h2{
+    font-size: xx-large;
+}
+#contact-info2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+#contact-info2 ul{
+    list-style: none;
+}
+#contact-info2 ul li{
+    padding: 3px;
+}
+#contact-info2 .box{
+    display: flex;
+}
+#contact-info2 .box img{
+    margin: 0 15px;
+}
+#contact-info2 .box img:hover{
+    background-color: #034732;
+    box-shadow: 0 0 10px 10px #034732;
+}
+#map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

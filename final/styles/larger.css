@@ -1,0 +1,109 @@
+@media screen and (min-width: 1000px) {
+    #menu{
+        display: none;
+    }
+    header h1{
+        font-size: 400%;
+    }
+    header .logo{
+        width: 150px;
+        border-radius: 75px;
+    }
+    nav{
+        font-size: large;
+    }
+    #social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #social div{
+        margin: 0 8px;
+    }
+    #social div img{
+        width: 50px;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: row;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    #hero_box{
+        margin: 5px auto;
+        display: grid;
+        grid-template: 2fr .5fr /1fr;
+        width: 85%;
+        box-shadow: 5px 5px 10px black;
+    }
+    #reserve_now{
+        font-size: 250%;
+    }
+    #main-home{
+        display: grid;
+        grid-template: 1fr 1fr/ 1fr 1fr;
+    }
+    #rental-summary{
+        grid-row: 1/3;
+        margin: 5px 5px 5px 5%;
+        font-size: large;
+    }
+    #weather{
+        display: grid;
+        grid-template: 5px .75fr .25fr/ 1fr 1fr 1fr;
+        max-width: 600px;
+        margin: 5px auto;
+    }
+    #contact-info{
+        max-width: 500px;
+        margin: 5px auto;
+        font-size: large;
+    }
+    #weather figure img{
+        object-fit: scale-down;
+        width: 100%;
+        height: 30%;
+        max-width: 150px;
+        max-height: 100px;
+    }
+    #wind-box{
+        display: flex;
+        grid-column: 1/4;
+    }
+/*---------------------------Rentals CSS--------------------------*/
+    #rental-info{
+        font-size: large;
+    }
+    #rental-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #action-call-rental{
+        grid-column: 1/3;
+    }
+/*---------------------------Reservations CSS--------------------------*/
+    #res-main{
+        display: grid;
+        grid-template: .25fr 1fr/1fr 1fr;
+    }
+    #res-agreements{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    #form{
+        grid-row: 1/3;
+    }
+    /*--------------------------Contact CSS------------------------------*/
+    #contact-main{
+        display: grid;
+        grid-template: 1fr 1fr/1fr 1fr;
+    }
+    #contact-info2{
+        max-width: 700px;
+        margin: 5px auto;
+        font-size: x-large;
+    }
+}

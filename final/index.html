@@ -16,12 +16,27 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/scoots-logo.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Radley&display=swap" rel="stylesheet">
+    <!-- CSS FONT RULES: 
+        font-family: 'Radley', serif;
+        font-family: 'Lato', sans-serif;-->
 </head>
 
 <body>
+    <div id="banner" class="card"></div>
     <header>
         <img class="logo" src="images/scoots-logo.webp" alt="Scoots logo">
         <h1>Scoots Motor Rentals</h1>
+        <div id="social">
+            <div class="social1"><a href="https://www.facebook.com/" target="_blank"><img
+                        src="images/facebook-icon.webp" alt="facebook" width="40"></a>
+            </div>
+            <div class="social2"><a href="https://www.instagram.com/" target="_blank"><img
+                        src="images/instagram-icon.webp" alt="facebook" width="40"></a></div>
+            <div class="social3"><a href="https://twitter.com/?lang=en" target="_blank"><img src="images/x-icon.webp"
+                        alt="facebook" width="40"></a></div>
+        </div>
     </header>
     <nav>
         <button id="menu" title="ham_button"></button>
@@ -38,20 +53,120 @@
             <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
             <img id="hero_image" src="images/hero-large.webp" alt="Cozumel" height="750" width="1500">
         </picture>
+        <div id="blank"></div>
         <div id="action_call">
             <a id="reserve_now" href="reservations.html">Reserve Now!</a>
         </div>
     </div>
     <main id="main-home">
-        <div id="banner" class="card"></div>
         <section class="card" id="rental-summary">
-            <h2>Rental Summary</h2>
+            <h2>Available Rentals</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Capacity</th>
+                        <th scope="col">Details</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Honda Metropolitan</td>
+                        <td>Scooter</td>
+                        <td>1</td>
+                        <td>49cc</td>
+                    </tr>
+                    <tr>
+                        <td>Honda Dio</td>
+                        <td>Scooter</td>
+                        <td>2</td>
+                        <td>110cc</td>
+                    </tr>
+                    <tr>
+                        <td>Honda PCX150</td>
+                        <td>Scooter</td>
+                        <td>2</td>
+                        <td>149cc</td>
+                    </tr>
+                    <tr>
+                        <td>Honda Pioneer 1000</td>
+                        <td>ATV</td>
+                        <td>4</td>
+                        <td>***</td>
+                    </tr>
+                    <tr>
+                        <td>Jeep Wrangler</td>
+                        <td>Jeep</td>
+                        <td>5</td>
+                        <td>
+                            <ul>
+                                <li>4 door</li>
+                                <li>Manual</li>
+                                <li>A/C</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jeep Wrangler</td>
+                        <td>Jeep</td>
+                        <td>4</td>
+                        <td>
+                            <ul>
+                                <li>2 door</li>
+                                <li>Manual</li>
+                                <li>Open Air</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section class="card" id="weather">
             <h2>Weather</h2>
+            <div id="temp-box">
+                <p><span id="current-temp"></span></p>
+                <p><span id="humidity"></span></p>
+            </div>
+            <figure>
+                <img id="weather-icon" src="#" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <div id="wind-box">
+                <p><span id="wind-speed"></span><span id="wind-chill"></span></p>
+            </div>
+            <div id="forecast-box">
+                <table id="forecast">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span id="day1"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span id="temp1"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <section class="card" id="contact-info">
             <h2>Contact Us!</h2>
+            <ul>
+                <li>📞+52 244-726-6837 (BIG SCOOTER)</li>
+                <li>🗺️Av. Motora Genial 66, 77620 Cozumel, Q.R., Mexico</li>
+            </ul>
+            <div class="box">
+                <div class="social1"><a href="https://www.facebook.com/" target="_blank"><img
+                            src="images/facebook-icon.webp" alt="facebook" width="40"></a>
+                </div>
+                <div class="social2"><a href="https://www.instagram.com/" target="_blank"><img
+                            src="images/instagram-icon.webp" alt="facebook" width="40"></a></div>
+                <div class="social3"><a href="https://twitter.com/?lang=en" target="_blank"><img
+                            src="images/x-icon.webp" alt="facebook" width="40"></a>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -60,9 +175,11 @@
             <p id="name">&copy;Scoots Motor Rentals</p>
             <p id="author">Kenneth S. Halling</p>
             <p id="last_modified"></p>
+            <a href="attributions.html">Attributions</a>
         </div>
     </footer>
     <script src="scripts/base.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </body>
 
 </html>
